@@ -291,7 +291,9 @@ public class User extends FacebookObject implements Serializable {
 	 * The user's bio.
 	 * Available only with "user_about_me" permission for the authenticated user.
 	 * @return the user's bio, if available.
+	 * @deprecated this field is deprecated in Facebook API and always returns null, use the {@link #getAbout()} field instead.
 	 */
+	@Deprecated
 	public String getBio() {
 		return bio;
 	}
